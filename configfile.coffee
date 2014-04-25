@@ -20,6 +20,8 @@ child = exec "ec2-describe-instances | grep -E 'INSTANCE(.*)ec2|TAG(.*)Name' | g
     IdentityFile ~/.ssh/dcguiprod.pem
     IdentityFile ~/.ssh/innometrics.pem
 
+    Host *
+      ServerAliveInterval 60
 
   """
 
